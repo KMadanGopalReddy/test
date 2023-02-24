@@ -32,7 +32,5 @@ jobs:
           #tag_name: ${{ needs.build.outputs.semver }}
           tag_name: v1.0.1
           release_name: Release v1.0.1
-          body: |
-            ${{ github.event.head_commit.message }}
           draft: true
           prerelease: true   
